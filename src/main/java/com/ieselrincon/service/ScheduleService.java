@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 public class ScheduleService {
 
     @Autowired
-    private ScheduleRepository scheduleRepository;
+    private ScheduleRepository scheduleRepository;// Repositorio JPA para la entidad Schedule
 
-    public Schedule saveSchedule(Schedule schedule) {
+    public Schedule saveSchedule(Schedule schedule) {// Método para guardar un horario
         return scheduleRepository.save(schedule);
     }
 }

@@ -1,4 +1,4 @@
-package com.ieselrincon.controller;
+package com.ieselrincon.controller;// 
 
 import com.ieselrincon.model.Power;
 import com.ieselrincon.service.PowerService;
@@ -9,8 +9,9 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/powers")
-public class PowerController {
+@RequestMapping("/api/powers")// Controlador REST para la entidad Power 
+
+public class PowerController {// Todas las rutas de este controlador comienzan con /api/powers
 
     @Autowired
     private PowerService service;

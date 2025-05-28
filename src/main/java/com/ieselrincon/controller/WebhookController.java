@@ -13,16 +13,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+// Controlador para manejar webhooks de GitHub
 
 @RestController
-@RequestMapping("/api/webhook")
+@RequestMapping("/api/webhook")// Ruta base para este controlador
 public class WebhookController {
-    @Value("${github.webhook.secret}")
-    private String SECRET;
+    @Value("${github.webhook.secret}")// Inyecta el secreto de GitHub desde el archivo de propiedades
+    private String SECRET;// Secreto para verificar la firma del webhook
 
     @GetMapping
-    public String blankGet() {
-        return "POST only";
+    public String blankGet() {// Método GET para verificar que el endpoint está activo
+        return "POST only";// Respuesta simple para GET, indicando que solo acepta POST
     }
 
     @PostMapping

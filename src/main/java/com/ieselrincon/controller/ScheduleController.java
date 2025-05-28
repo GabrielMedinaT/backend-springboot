@@ -8,15 +8,15 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/schedules")
-public class ScheduleController {
+@RequestMapping("/api/schedules")// Controlador REST para la entidad Schedule
+public class ScheduleController {// Todas las rutas de este controlador comienzan con /api/schedules
 
     @Autowired
-    private ScheduleService scheduleService;
+    private ScheduleService scheduleService;// Inyección del servicio que maneja la lógica de negocio
 
-    @PostMapping
-    public ResponseEntity<Schedule> createSchedule(@RequestBody Schedule schedule) {
-        Schedule saved = scheduleService.saveSchedule(schedule);
-        return new ResponseEntity<>(saved, HttpStatus.CREATED);
+    @PostMapping // Ruta para crear un nuevo horario
+    public ResponseEntity<Schedule> createSchedule(@RequestBody Schedule schedule) {// Recibe un objeto Schedule en el cuerpo de la solicitud
+        Schedule saved = scheduleService.saveSchedule(schedule);// Llama al servicio para guardar el horario
+        return new ResponseEntity<>(saved, HttpStatus.CREATED);// Devuelve el horario guardado con estado 201 Created
     }
 }

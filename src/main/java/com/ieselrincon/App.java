@@ -12,8 +12,8 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 public class App {
     public static void main(String[] args) {
         Dotenv dotenv = Dotenv.configure().ignoreIfMissing().load();
-        dotenv.entries().forEach(entry -> System.setProperty(entry.getKey(), entry.getValue()));
+        dotenv.entries().forEach(entry -> System.setProperty(entry.getKey(), entry.getValue()));// Cargar las variables de entorno desde el archivo .env
 
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(App.class, args);// Iniciar la aplicación Spring Boot
     }
 }

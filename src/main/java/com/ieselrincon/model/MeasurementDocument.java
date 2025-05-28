@@ -11,7 +11,7 @@ public class MeasurementDocument {
     private String id;  // MongoDB usa String para los IDs
 
     private int idSensor;
-    private Double consumo;
+    private Double  medidas;
     private LocalDateTime fecha;
 
     // Getters y Setters
@@ -31,12 +31,12 @@ public class MeasurementDocument {
         this.idSensor = idSensor;
     }
 
-    public Double getConsumo() {
-        return consumo;
+    public Double getMedidas() {
+        return medidas;
     }
 
-    public void setConsumo(Double consumo) {
-        this.consumo = consumo;
+    public void setMedidas(Double medidas) {
+        this.medidas = medidas;
     }
 
     public LocalDateTime getFecha() {

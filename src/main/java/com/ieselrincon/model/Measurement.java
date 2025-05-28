@@ -15,8 +15,8 @@ public class Measurement {
     @Column(name = "id_sensor")
     private int idSensor;
 
-    @Column(name = "consumo")
-    private Double consumo;
+    @Column(name = "medidas")
+    private Double medidas;
 
     @Column(name = "fecha")
     private LocalDateTime fecha;
@@ -24,7 +24,7 @@ public class Measurement {
     @Column(name = "incremento")
     private Double incremento;
 
-    // Getters y Setters
+    // Getters y Setters con convención correcta
     public int getIdMeasure() {
         return idMeasure;
     }
@@ -41,12 +41,12 @@ public class Measurement {
         this.idSensor = idSensor;
     }
 
-    public Double getConsumo() {
-        return consumo;
+    public Double getMedidas() {
+        return medidas;
     }
 
-    public void setConsumo(Double consumo) {
-        this.consumo = consumo;
+    public void setMedidas(Double medidas) {
+        this.medidas = medidas;
     }
 
     public LocalDateTime getFecha() {

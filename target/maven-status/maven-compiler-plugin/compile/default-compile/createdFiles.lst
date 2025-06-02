@@ -1,12 +1,10 @@
 com/ieselrincon/model/Measurement.class
 com/ieselrincon/repository/jpa/UserLoginRepository.class
-com/ieselrincon/service/MeasurementService.class
 com/ieselrincon/controller/WebhookController.class
 com/ieselrincon/App.class
 com/ieselrincon/service/PowerService.class
 com/ieselrincon/model/MeasurementDocument.class
 com/ieselrincon/repository/jpa/MeasurementRepository.class
-com/ieselrincon/repository/mongo/MeasurementMongoRepository.class
 com/ieselrincon/service/ScheduleService.class
 com/ieselrincon/controller/MeasurementController.class
 com/ieselrincon/repository/jpa/ScheduleRepository.class

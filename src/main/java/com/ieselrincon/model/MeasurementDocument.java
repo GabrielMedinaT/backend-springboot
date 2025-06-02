@@ -1,10 +1,11 @@
 package com.ieselrincon.model;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+
+
 import java.time.LocalDateTime;
 
-@Document(collection = "measurements")
+
 public class MeasurementDocument {
 
     @Id

@@ -7,7 +7,6 @@
 /home/ses/SmartEcoSchool/backend-springboot/src/main/java/com/ieselrincon/repository/jpa/ScheduleRepository.java
 /home/ses/SmartEcoSchool/backend-springboot/src/main/java/com/ieselrincon/model/MeasurementDocument.java
 /home/ses/SmartEcoSchool/backend-springboot/src/main/java/com/ieselrincon/controller/LoginController.java
-/home/ses/SmartEcoSchool/backend-springboot/src/main/java/com/ieselrincon/repository/mongo/MeasurementMongoRepository.java
 /home/ses/SmartEcoSchool/backend-springboot/src/main/java/com/ieselrincon/service/PowerService.java
 /home/ses/SmartEcoSchool/backend-springboot/src/main/java/com/ieselrincon/controller/WebhookController.java
 /home/ses/SmartEcoSchool/backend-springboot/src/main/java/com/ieselrincon/controller/MeasurementController.java

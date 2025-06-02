@@ -11,7 +11,8 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(@NonNull CorsRegistry registry) {// Configuración de CORS
         registry.addMapping("/**")
-                .allowedOrigins("http://escritorios.ieselrincon.es:8880") // Específico, no "*"
+                .allowedOrigins("http://escritorios.ieselrincon.es:8880",
+                "http://www.smartecoschool.es") // Específico, no "*"
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true); // Necesario si usas cookies/sesiones
